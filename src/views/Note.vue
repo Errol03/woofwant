@@ -222,7 +222,11 @@
             </h3>
           </template>
           <template #img>
-            <img :src="'.//images/white-dog.jpg'" alt="" />
+            <img
+              :src="'.//images/white-dog.jpg'"
+              alt=""
+              style="height: 195px"
+            />
           </template>
           <template #text>
             <p class="notetext">不同品種常見的疾病與護理</p>
@@ -248,6 +252,7 @@
             <img
               :src="'./images/b5d4b85c317b82c562cbfd437872d78e.jpg'"
               alt=""
+              style="height: 195px"
             />
           </template>
           <template #text>
