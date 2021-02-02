@@ -431,7 +431,7 @@ export default {
             this.$swal({
               icon: 'success',
               title: '註冊成功',
-              text: 'woof'
+              text: '歡迎加入線上相簿'
             })
           } else {
             this.$swal({

@@ -178,6 +178,7 @@ router.afterEach((to, from) => {
     title = to.meta.title
   }
   document.title = title
+  document.documentElement.scrollTop = 0
 })
 
 export default router
