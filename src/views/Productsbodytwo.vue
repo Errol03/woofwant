@@ -14,12 +14,12 @@
         <template>
           <div class="center">
             <b @click="active6 = !active6">
-              <img src="../../images\步行輔助帶-21.svg" height="400" />
+              <img :src="'./images/步行輔助帶-21.svg'" height="400" />
             </b>
             <vs-dialog not-close auto-width not-padding v-model="active6">
               <div class="con-imagetwo">
                 <img
-                  src="../../images\步行輔助帶-21.svg"
+                  :src="'./images/步行輔助帶-21.svg'"
                   height="800"
                   style="margin: auto"
                 />
@@ -32,11 +32,11 @@
         <template>
           <div class="center">
             <b @click="active7 = !active7">
-              <img src="../../images\牽引帶正側面-21.svg" height="400" />
+              <img :src="'./images/牽引帶正側面-21.svg'" height="400" />
             </b>
             <vs-dialog not-close auto-width not-padding v-model="active7">
               <div class="con-image">
-                <img src="../../images\牽引帶正側面-21.svg" />
+                <img :src="'./images/牽引帶正側面-21.svg'" />
               </div>
             </vs-dialog>
           </div>
@@ -46,11 +46,11 @@
         <template>
           <div class="center">
             <b @click="active5 = !active5">
-              <img src="../../images\牽引帶2-21.svg" height="400" />
+              <img :src="'./images/牽引帶2-21.svg'" height="400" />
             </b>
             <vs-dialog not-close auto-width not-padding v-model="active5">
               <div class="con-image">
-                <img src="../../images\牽引帶2-21.svg" />
+                <img :src="'./images/牽引帶2-21.svg'" />
               </div>
             </vs-dialog>
           </div>
@@ -60,11 +60,11 @@
         <template>
           <div class="center">
             <b @click="active8 = !active8">
-              <img src="../../images\000001_1584600315.jpg" height="400" />
+              <img :src="'./images/000001_1584600315.jpg'" height="400" />
             </b>
             <vs-dialog not-close auto-width not-padding v-model="active8">
               <div class="con-image">
-                <img src="../../images\000001_1584600315.jpg" />
+                <img :src="'./images/000001_1584600315.jpg'" />
               </div>
             </vs-dialog>
           </div>
@@ -75,18 +75,18 @@
         <template>
           <div class="center">
             <b @click="active8 = !active8">
-              <img src="../../images\測量方式-14.svg" height="400" />
+              <img :src="'./images/測量方式-14.svg'" height="400" />
             </b>
             <vs-dialog not-close auto-width not-padding v-model="active8">
               <div class="con-image3">
-                <img src="../../images\測量方式-14.svg" height="800" />
+                <img :src="'./images/測量方式-14.svg'" height="800" />
               </div>
             </vs-dialog>
           </div>
         </template>
       </slide>
       <!-- <slide>
-        <img src="../../images\null-15.jpg" height="350" />
+        <img :src="'./images/null-15.jpg'" height="350" />
       </slide> -->
     </carousel>
     <!-- 商品縮圖 -->

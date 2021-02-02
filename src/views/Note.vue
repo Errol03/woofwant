@@ -29,7 +29,7 @@
             </h3>
           </template>
           <template #img>
-            <img src="../../images\notebanner1-02-01.jpg" alt="" />
+            <img :src="'./images/notebanner1-02-01.jpg'" alt="" />
           </template>
           <template #text>
             <p class="notetext">
@@ -54,7 +54,7 @@
             </h3>
           </template>
           <template #img>
-            <img src="../../images\乾食濕食.jpg" alt="" />
+            <img :src="'./images/乾食濕食.jpg'" alt="" />
           </template>
           <template #text>
             <p class="notetext">
@@ -79,7 +79,7 @@
             </h3>
           </template>
           <template #img>
-            <img src="../../images\notebanner3-01.png" width="100px" />
+            <img :src="'./images/notebanner3-01.png'" width="100px" />
           </template>
           <template #text>
             <p class="notetext">
@@ -94,7 +94,7 @@
         </template>
         <div class="vs-dialog__content">
           <img
-            src="../../images\notebanner1.1-01.jpg"
+            :src="'./images/notebanner1.1-01.jpg'"
             width="90%"
             style="border-radius: 30px"
           />
@@ -133,7 +133,7 @@
         </template>
         <div class="vs-dialog__content">
           <img
-            src="../../images/乾食濕食.jpg"
+            :src="'./images/乾食濕食.jpg'"
             width="90%"
             style="border-radius: 30px"
           />
@@ -222,7 +222,7 @@
             </h3>
           </template>
           <template #img>
-            <img src="../..//images/white-dog.jpg" alt="" />
+            <img :src="'.//images/white-dog.jpg'" alt="" />
           </template>
           <template #text>
             <p class="notetext">不同品種常見的疾病與護理</p>
@@ -246,7 +246,7 @@
           </template>
           <template #img>
             <img
-              src="../../images/b5d4b85c317b82c562cbfd437872d78e.jpg"
+              :src="'./images/b5d4b85c317b82c562cbfd437872d78e.jpg'"
               alt=""
             />
           </template>
@@ -274,7 +274,7 @@
           </template>
           <template #img>
             <img
-              src="../../images/0731767770926579db7fae1c6417247e.jpg"
+              :src="'./images/0731767770926579db7fae1c6417247e.jpg'"
               alt=""
             />
           </template>
@@ -291,7 +291,7 @@
         </template>
         <div class="vs-dialog__content">
           <img
-            src="../../images/乾食濕食.jpg"
+            :src="'./images/乾食濕食.jpg'"
             width="90%"
             style="border-radius: 30px"
           />
@@ -373,7 +373,7 @@
         </template>
         <div class="vs-dialog__content">
           <img
-            src="../../images/乾食濕食.jpg"
+            :src="'./images/乾食濕食.jpg'"
             width="90%"
             style="border-radius: 30px"
           />
@@ -445,7 +445,7 @@
           </template>
           <div class="vs-dialog__content">
             <img
-              src="../../images/乾食濕食.jpg"
+              :src="'./images/乾食濕食.jpg'"
               width="90%"
               style="border-radius: 30px"
             />

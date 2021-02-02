@@ -5,11 +5,7 @@
   >
     <div id="btb">
       <br />
-      <img
-        class="headtitle"
-        src="../../images\images\身體-張眼-01.gif"
-        alt=""
-      />
+      <img class="headtitle" :src="'./images/身體-張眼-01.gif'" alt="" />
       <br />
       <br />
       <div class="center" style="width: 90%; margin: auto; text-align: center">
@@ -29,7 +25,7 @@
                 <h3>Y字背心牽引帶</h3>
               </template>
               <template #img>
-                <img src="../../images\3330163_R3.jpg" alt="" />
+                <img :src="'./images/3330163_R3.jpg'" alt="" />
               </template>
               <template #text>
                 <p>保護失明動物免於碰撞，躺臥也不影響，行動自如</p>
@@ -51,7 +47,7 @@
                 <h3>安定背心</h3>
               </template>
               <template #img>
-                <img src="../../images\身體-背心.jpg" />
+                <img :src="'./images/身體-背心.jpg'" />
               </template>
               <template #text>
                 <p>
@@ -75,7 +71,7 @@
                 <h3>恆溫保暖支撐墊</h3>
               </template>
               <template #img>
-                <img src="../../images\身體-沙發.jpg" />
+                <img :src="'./images/身體-沙發.jpg'" />
               </template>
               <template #text>
                 <p>
@@ -108,7 +104,7 @@
                 <h3>牽引帶背心</h3>
               </template>
               <template #img>
-                <img src="../../images\身體-背心-22.jpg" alt="" />
+                <img :src="'./images/身體-背心-22.jpg'" alt="" />
               </template>
               <template #text>
                 <p>
@@ -132,7 +128,7 @@
                 <h3>保暖雨衣</h3>
               </template>
               <template #img>
-                <img src="../../images\身體-雨衣.jpg" />
+                <img :src="'./images/身體-雨衣.jpg'" />
               </template>
               <template #text>
                 <p>100%polyester，材質保暖有質感，毛孩穿著柔軟舒適</p>
@@ -154,7 +150,7 @@
                 <h3>大型老犬寵物推車</h3>
               </template>
               <template #img>
-                <img src="../../images\身體-搖籃.jpg" />
+                <img :src="'./images/身體-搖籃.jpg'" />
               </template>
               <template #text>
                 <p>
@@ -172,7 +168,7 @@
         <div class="hover-box">
           <div class="img-box">
             <slide id="headcoki">
-              <img src="../../images\banner-01.png" height="400" />
+              <img :src="'./images/banner-01.png'" height="400" />
             </slide>
           </div>
           <div class="info-box">
@@ -192,7 +188,7 @@
         <div class="hover-box">
           <div class="img-box">
             <slide id="handfox">
-              <img src="../../images\banner2-01.png" height="400" />
+              <img :src="'./images/banner2-01.png'" height="400" />
             </slide>
           </div>
           <div class="info-box">
@@ -207,7 +203,7 @@
         <div class="hover-box">
           <div class="img-box">
             <slide id="neckpuff">
-              <img src="../../images\7440A147.jpg" height="400" />
+              <img :src="'./images/7440A147.jpg'" height="400" />
             </slide>
           </div>
           <div class="info-box">
@@ -222,7 +218,7 @@
         <div class="hover-box">
           <div class="img-box">
             <slide id="bodyellow">
-              <img src="../../images\carbody-21.jpg" height="400" />
+              <img :src="'./images/carbody-21.jpg'" height="400" />
             </slide>
           </div>
           <div class="info-box">
@@ -238,7 +234,7 @@
           <div class="img-box">
             <slide id="headcoki">
               <img
-                src="../../images\後腳-十字韌帶復健護膝-21.jpg"
+                :src="'./images/後腳-十字韌帶復健護膝-21.jpg'"
                 height="400"
               />
             </slide>
@@ -255,7 +251,7 @@
         <div class="hover-box">
           <div class="img-box">
             <slide id="headcoki">
-              <img src="../../images\屁股尾巴-21.jpg" height="400" />
+              <img :src="'./images/屁股尾巴-21.jpg'" height="400" />
             </slide>
           </div>
           <div class="info-box">
@@ -267,25 +263,25 @@
         </div>
       </router-link>
       <slide class="carhead">
-        <img id="headcoki" src="../../images\防撞圈2.svg" height="400" />
+        <img id="headcoki" :src="'./images/防撞圈2.svg'" height="400" />
       </slide>
       <slide class="carhead">
-        <img id="headcoki" src="../../images\防撞圈2.svg" height="400" />
+        <img id="headcoki" :src="'./images/防撞圈2.svg'" height="400" />
       </slide>
       <slide class="carhead">
-        <img id="headcoki" src="../../images\防撞圈2.svg" height="400" />
+        <img id="headcoki" :src="'./images/防撞圈2.svg'" height="400" />
       </slide>
       <slide class="carhead">
-        <img id="headcoki" src="../../images\防撞圈2.svg" height="400" />
+        <img id="headcoki" :src="'./images/防撞圈2.svg'" height="400" />
       </slide>
       <slide class="carhead">
-        <img id="headcoki" src="../../images\防撞圈2.svg" height="400" />
+        <img id="headcoki" :src="'./images/防撞圈2.svg'" height="400" />
       </slide>
       <slide class="carhead">
-        <img id="headcoki" src="../../images\防撞圈2.svg" height="400" />
+        <img id="headcoki" :src="'./images/防撞圈2.svg'" height="400" />
       </slide>
       <slide class="carhead">
-        <img id="headcoki" src="../../images\防撞圈2.svg" height="400" />
+        <img id="headcoki" :src="'./images/防撞圈2.svg'" height="400" />
       </slide>
     </carousel>
   </div>

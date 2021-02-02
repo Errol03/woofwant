@@ -1,10 +1,10 @@
 <template>
   <div id="contact">
-    <!-- <img id="homelogo" src="../../images/LOGO-love-08.png" /> -->
+    <!-- <img id="homelogo" :src="'./images/LOGO-love-08.png'" /> -->
     <img
       id="pinpeilogo"
       class="pinpeilogo"
-      src="../../images/pinpeilogo.svg"
+      :src="'./images/pinpeilogo.svg'"
       width="450"
     />
     <template>
@@ -42,7 +42,7 @@
       </vs-row>
      </div>
   </template> -->
-    <img class="talk" src="../../images\衣櫃-17.svg" alt="" />
+    <img class="talk" :src="'./images/衣櫃-17.svg'" alt="" />
     <div id="dog">
       <div id="cardgroupdog" class="row center">
         <router-link to="/products">
@@ -51,7 +51,7 @@
               <h3 style="display: flex; left: 10rem">頭/脖子</h3>
             </template>
             <template #img>
-              <img src="../../images/head.png" alt="" />
+              <img :src="'./images/head.png'" alt="" />
             </template>
             <template #text>
               <p class="hovertext">從鼻子到脖子Loremc adipisicing elit.</p>
@@ -64,7 +64,7 @@
               <h3>身體</h3>
             </template>
             <template #img>
-              <img src="../../images/body.png" alt="" />
+              <img :src="'./images/body.png'" alt="" />
             </template>
             <template #text>
               <p class="hovertext">
@@ -79,7 +79,7 @@
               <h3>尾巴</h3>
             </template>
             <template #img>
-              <img src="../../images/tail.png" alt="" />
+              <img :src="'./images/tail.png'" alt="" />
             </template>
             <template #text>
               <p class="hovertext">
@@ -98,7 +98,7 @@
               <h3>前腳</h3>
             </template>
             <template #img>
-              <img src="../../images/hand-12.png" alt="" />
+              <img :src="'./images/hand-12.png'" alt="" />
             </template>
             <template #text>
               <p class="hovertext">
@@ -113,7 +113,7 @@
               <h3>後腿</h3>
             </template>
             <template #img>
-              <img src="../../images/leg-13.png" alt="" />
+              <img :src="'./images/leg-13.png'" alt="" />
             </template>
             <template #text>
               <p class="hovertext">
@@ -197,14 +197,14 @@
       </template>
     </div>
     <template>
-      <img class="paws2" src="../../images/腳印-18.png" alt="" />
-      <img class="paws" src="../../images/腳印-18.png" alt="" />
-      <img id="paw3" class="paws3" src="../../images/腳印-18.png" alt="" />
+      <img class="paws2" :src="'./images/腳印-18.png'" alt="" />
+      <img class="paws" :src="'./images/腳印-18.png'" alt="" />
+      <img id="paw3" class="paws3" :src="'./images/腳印-18.png'" alt="" />
       <br />
       <br />
       <br />
       <div class="table-responsive" id="table-responsive">
-        <img class="contactpic" src="../../images/contact-22.svg" />
+        <img class="contactpic" :src="'./images/contact-22.svg'" />
       </div>
     </template>
   </div>

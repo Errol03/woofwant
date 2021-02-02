@@ -1,11 +1,11 @@
 <template>
   <div id="home">
     <!-- sidebar -->
-    <!-- <img id="homelogo" src="../../images/LOGO-love-08.png" /> -->
+    <!-- <img id="homelogo" :src="'./images/LOGO-love-08.png'" /> -->
     <img
       id="pinpeilogo"
       class="pinpeilogo"
-      src="../../images/pinpeilogo.svg"
+      :src="'./images/pinpeilogo.svg'"
       width="450"
     />
     <template>
@@ -52,7 +52,7 @@
       </vs-row>
      </div>
   </template> -->
-    <img class="talk" src="../../images\衣櫃-17.svg" alt="" />
+    <img class="talk" :src="'./images/衣櫃-17.svg'" alt="" />
     <div id="dog">
       <div id="cardgroupdog" class="row center">
         <router-link to="/products">
@@ -61,7 +61,7 @@
               <h3 style="display: flex; left: 10rem">頭/脖子</h3>
             </template>
             <template #img>
-              <img src="../../images/head.png" alt="" />
+              <img :src="'./images/head.png'" alt="" />
             </template>
             <template #text>
               <p class="hovertext">
@@ -76,7 +76,7 @@
               <h3>身體</h3>
             </template>
             <template #img>
-              <img src="../../images/body.png" alt="" />
+              <img :src="'./images/body.png'" alt="" />
             </template>
             <template #text>
               <p class="hovertext">從鼻子到脖子的好物從鼻子到脖子的好物</p>
@@ -89,7 +89,7 @@
               <h3>尾巴</h3>
             </template>
             <template #img>
-              <img src="../../images/tail.png" alt="" />
+              <img :src="'./images/tail.png'" alt="" />
             </template>
             <template #text>
               <p class="hovertext">從鼻子到脖子的好物從鼻子到脖子的好物</p>
@@ -99,23 +99,23 @@
       </div>
 
       <div id="cardgroup" class="row center">
-       <a href="#" v-scroll-to="'#headhand'">
-        <router-link to="/Hand">
-          <vs-card type="2" class="col-4">
-            <div class="vs-card"></div>
-            <template #title>
-              <h3>前腳</h3>
-            </template>
-            <template #img>
-              <img src="../../images/hand-12.png" alt="" />
-            </template>
-            <template #text>
-              <p class="hovertext">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-            </template>
-          </vs-card>
-        </router-link>
+        <a href="#" v-scroll-to="'#headhand'">
+          <router-link to="/Hand">
+            <vs-card type="2" class="col-4">
+              <div class="vs-card"></div>
+              <template #title>
+                <h3>前腳</h3>
+              </template>
+              <template #img>
+                <img :src="'./images/hand-12.png'" alt="" />
+              </template>
+              <template #text>
+                <p class="hovertext">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </template>
+            </vs-card>
+          </router-link>
         </a>
         <router-link to="/Leg">
           <vs-card type="2">
@@ -123,7 +123,7 @@
               <h3>後腿</h3>
             </template>
             <template #img>
-              <img src="../../images/leg-13.png" alt="" />
+              <img :src="'./images/leg-13.png'" alt="" />
             </template>
             <template #text>
               <p class="hovertext">
@@ -207,17 +207,17 @@
       </template>
     </div>
     <template>
-      <img class="paws2" src="../../images/腳印-18.png" alt="" />
-      <img class="paws" src="../../images/腳印-18.png" alt="" />
-      <img id="paw3" class="paws3" src="../../images/腳印-18.png" alt="" />
+      <img class="paws2" :src="'./images/腳印-18.png'" alt="" />
+      <img class="paws" :src="'./images/腳印-18.png'" alt="" />
+      <img id="paw3" class="paws3" :src="'./images/腳印-18.png'" alt="" />
       <br />
       <br />
       <br />
       <div class="table-responsive" id="table-responsive">
-        <img class="contactpichome" src="../../images/contact-22.svg" />
+        <img class="contactpichome" :src="'./images/contact-22.svg'" />
       </div>
     </template>
-      <br>
+    <br />
   </div>
 </template>
 <script>

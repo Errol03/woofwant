@@ -21,7 +21,7 @@
               color="rgb(255,255,255)"
             >
               <!-- navbar logo -->
-              <img id="navlogo" src="../images\LOGO-16.svg" />
+              <img id="navlogo" :src="'./images/LOGO-16.svg'" />
             </vs-button>
           </template>
           <router-link to="/">
@@ -319,7 +319,7 @@
             寵物籃
           </vs-sidebar-item>
           <template #footer> </template>
-          <img class="sidedog" src="../images\sidebar-20.svg" alt="" />
+          <img class="sidedog" :src="'./images/sidebar-20.svg'" alt="" />
         </vs-sidebar>
       </div>
       <br />
