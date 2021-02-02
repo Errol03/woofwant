@@ -1,0 +1,227 @@
+<template>
+  <div id="app">
+    <div id="nav">
+      <div class="con-type-example">
+      </div>
+      <!-- <vs-navbar-item :active="active == 'rgb(59,222,200)'" id="rgb(59,222,200)">
+          </vs-navbar-item> -->
+      <div class="hidden">
+        <vs-navbar id="vs-navbar" shadow square center-collapsed v-model="active" style="overflow-x: hidden;">
+          <template #left>
+            <vs-button @click="activeSidebar = !activeSidebar" flat icon color="rgb(255,255,255)">
+              <!-- navbar logo -->
+              <img id="navlogo" src="../images/920.gif">
+            </vs-button>
+          </template>
+          <router-link to="/">
+            <vs-navbar-item :active="active  == '/'" id="app">
+              首頁
+              <!-- <router-link to="/contact">Contact</router-link>
+          v-if="user.id.length > 0"  先拿掉-->
+
+            </vs-navbar-item>
+          </router-link>
+          <router-link to="/products">
+            <vs-navbar-item v-if="user.id.length > 0" :active="active > '/products'" id="products">
+              日常用品
+            </vs-navbar-item>
+          </router-link>
+          <router-link to="/#contactable">
+            <vs-navbar-item v-if="user.id.length > 0" :active="active > '/contacts'" id="contact">
+              聯絡我們
+            </vs-navbar-item>
+          </router-link>
+          <router-link to="/note">
+            <vs-navbar-item v-if="user.id.length > 0" :active="active > '/note'" id="note">
+              好聞共讀
+            </vs-navbar-item>
+          </router-link>
+          <router-link to="/cart">
+            <vs-navbar-item v-if="user.id.length > 0" :active="active > '/cart'" id="cart">
+              寵物籃
+            </vs-navbar-item>
+          </router-link>
+          <template #right id="relogtextcolor">
+            <vs-button id=reg-button color="rgb(240,190,150)" v-if="user.id.length === 0" @click="active1=!active1">
+              登入
+            </vs-button>
+            <form @submit.prevent="onSubmit">
+              <vs-dialog prevent-close v-model="active1">
+                <template #header>
+                  <h4 id="regnav" class="not-margin">
+                    <b class="login-textcolor">登入 Woofwant</b>
+                  </h4>
+                </template>
+                <div class="con-form">
+                  <vs-input v-model="account" placeholder="Email" :state="accountState">
+                    <template #icon>
+
+                      <box-icon name='envelope' color='#959595'></box-icon>
+                    </template>
+                  </vs-input>
+                  <br>
+                  <vs-input type="password" v-model="password" placeholder="Password" :state="passwordState">
+                    <template #icon>
+                      <box-icon name='lock' type='solid' color='#959595'></box-icon>
+                    </template>
+                  </vs-input>
+                  <div class="flex">
+                    <vs-checkbox v-model="checkbox1" id="checkbox1">Remember me</vs-checkbox>
+                    <a id="forgot-log" href="#" class="rgb(158, 158, 158)">Forgot Password?</a>
+                  </div>
+                </div>
+
+                <template #footer>
+                  <div class="footer-dialog">
+                    <vs-button block v-if="user.id.length == 0" type="submit">
+                      Sign Up
+                    </vs-button>
+
+                    <div class="new">
+                      New Here? <a href="#">Create New Account</a>
+                    </div>
+                  </div>
+                </template>
+              </vs-dialog>
+            </form>
+            <!--結束 -->
+            <vs-button id=reg-button color="rgb(240,190,150)" @click="active2=!active2">
+              註冊
+            </vs-button>
+            <vs-dialog prevent-close v-model="active2">
+              <template #header>
+                <h4 id="regnav" class="not-margin">
+                  <b class="login-textcolor">註冊 Woofwant</b>
+                </h4>
+              </template>
+              <div class="con-form-two">
+                <vs-input v-model="input3" placeholder="您的姓名">
+                </vs-input>
+                <vs-input type="password" v-model="input4" placeholder="手機號碼">
+                </vs-input>
+                <vs-input type="password" v-model="input5" placeholder="收件信箱">
+                </vs-input>
+                <vs-input type="password" v-model="input6" placeholder="收件地址">
+                </vs-input>
+                <vs-input type="password" v-model="input7" placeholder="狗狗姓名">
+                </vs-input>
+                <vs-input type="password" v-model="input8" placeholder="狗狗生日  yyyy/mm/dd">
+                </vs-input>
+                <div class="flex">
+                </div>
+              </div>
+
+              <template #footer>
+                <div class="footer-dialog">
+                  <vs-button block v-if="user.id.length == 0">
+                    Sign Up
+                  </vs-button>
+                </div>
+              </template>
+            </vs-dialog>
+          </template>
+        </vs-navbar>
+        <vs-sidebar right v-model="active" :open.sync="activeSidebar" color="rgb(240,190,140)">
+          <template #logo>
+            <!-- img logo  -->
+          </template>
+          <br>
+          <br>
+          <br>
+          <vs-sidebar-item to="/" color="rgb(240,190,140)">
+            <template #icon>
+              <!-- <i class='bx bx-home'></i> -->
+              <box-icon name='home-smile' type='solid' color='rgb(240,190,140)'></box-icon>
+            </template>
+            首頁
+          </vs-sidebar-item>
+          <vs-sidebar-group color='rgb(240,190,140)'>
+            <template #header>
+              <vs-sidebar-item arrow to="/products">
+                <template #icon>
+                  <i class='bx bx-group'></i>
+                </template>
+                日常用品
+              </vs-sidebar-item>
+            </template>
+            <vs-sidebar-item id="Instagram">
+              <template #icon>
+                <i class='bx bxl-instagram'></i>
+              </template>
+              頭部
+            </vs-sidebar-item>
+            <vs-sidebar-item id="twitter">
+              <template #icon>
+                <i class='bx bxl-twitter'></i>
+              </template>
+              脖子/身體
+            </vs-sidebar-item>
+            <vs-sidebar-item id="Facebook">
+              <template #icon>
+                <i class='bx bxl-facebook'></i>
+              </template>
+              前腳
+            </vs-sidebar-item>
+            <vs-sidebar-item id="twitter">
+              <template #icon>
+                <i class='bx bxl-twitter'></i>
+              </template>
+              後腿
+            </vs-sidebar-item>
+            <vs-sidebar-item id="Facebook">
+              <template #icon>
+                <i class='bx bxl-facebook'></i>
+              </template>
+              屁股/尾巴
+            </vs-sidebar-item>
+          </vs-sidebar-group>
+          <vs-sidebar-item id="donate">
+            <template #icon>
+              <i class='bx bxs-donate-heart'></i>
+            </template>
+            <a id="navcontact">聯絡我們</a>
+          </vs-sidebar-item>
+          <vs-sidebar-item id="donate">
+            <template #icon>
+              <i class='bx bxs-donate-heart'></i>
+            </template>
+            好聞共讀
+          </vs-sidebar-item>
+          <vs-sidebar-item id="drink">
+            <template #icon>
+              <i class='bx bx-drink'></i>
+            </template>
+            寵物籃
+          </vs-sidebar-item>
+          <vs-sidebar-item id="shopping">
+            <template #icon>
+              <i class='bx bxs-shopping-bags'></i>
+            </template>
+            Shopping
+          </vs-sidebar-item>
+          <vs-sidebar-item id="chat">
+            <template #icon>
+              <i class='bx bx-chat'></i>
+            </template>
+            Chat
+          </vs-sidebar-item>
+          <template #footer>
+            <vs-row justify="space-between">
+              <vs-avatar>
+                <img src="/avatars/avatar-5.png" alt="">
+              </vs-avatar>
+              <vs-avatar badge-color="danger" badge-position="top-right">
+                <i class='bx bx-bell'></i>
+                <template #badge>
+                  28
+                </template>
+              </vs-avatar>
+            </vs-row>
+          </template>
+        </vs-sidebar>
+      </div>
+      <br>
+    </div>
+    <router-view />
+  </div>
+</template>
