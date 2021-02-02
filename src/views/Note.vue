@@ -225,9 +225,7 @@
             <img src="../..//images/white-dog.jpg" alt="" />
           </template>
           <template #text>
-            <p class="notetext">
-              不同品種常見的疾病與護理
-            </p>
+            <p class="notetext">不同品種常見的疾病與護理</p>
           </template>
         </vs-card>
         <vs-card
@@ -247,7 +245,10 @@
             </h3>
           </template>
           <template #img>
-            <img src="../../images/b5d4b85c317b82c562cbfd437872d78e.jpg" alt="" />
+            <img
+              src="../../images/b5d4b85c317b82c562cbfd437872d78e.jpg"
+              alt=""
+            />
           </template>
           <template #text>
             <p class="notetext">
@@ -272,12 +273,13 @@
             </h3>
           </template>
           <template #img>
-            <img src="../../images/0731767770926579db7fae1c6417247e.jpg" alt="" />
+            <img
+              src="../../images/0731767770926579db7fae1c6417247e.jpg"
+              alt=""
+            />
           </template>
           <template #text>
-            <p class="notetext">
-              人犬互通的傳播疾病與因應政策
-            </p>
+            <p class="notetext">人犬互通的傳播疾病與因應政策</p>
           </template>
         </vs-card>
       </vs-row>
@@ -510,7 +512,7 @@
         </vs-dialog>
       </template>
     </template>
-    <br /> 
+    <br />
   </div>
 </template>
 <script>
