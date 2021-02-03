@@ -6,6 +6,7 @@ import VueCarousel from 'vue-carousel'
 import VueAxios from 'vue-axios'
 import axios from 'axios'
 // import animateScrollTo from 'animated-scroll-to'
+import VueGtag from 'vue-gtag'
 
 import VueSweetalert2 from 'vue-sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css'
@@ -39,6 +40,12 @@ Vue.use(Vuesax, {
   // options here
 })
 Vue.config.productionTip = false
+
+Vue.use(VueGtag, {
+  config: {
+    id: process.env.VUE_APP_GA
+  }
+})
 
 Vue.use(VueCarousel)
 Vue.use(VueAxios, axios)

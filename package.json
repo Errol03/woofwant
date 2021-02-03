@@ -25,6 +25,7 @@
     "vue-axios": "^3.2.2",
     "vue-carousel": "^0.18.0",
     "vue-easy-lightbox": "^1.0.0-rc.3",
+    "vue-gtag": "^1.10.0",
     "vue-pswipe": "^0.15.2",
     "vue-router": "^3.2.0",
     "vue-scrollto": "^2.20.0",
